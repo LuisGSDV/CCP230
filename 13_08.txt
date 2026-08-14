@@ -1,0 +1,56 @@
+- interpretado = interpreta linha linha
+- compilado = 2 etapas: compila analisando linha a linha verificando semantica; 2 parte: converte pra linguagem de máquina. ; executa diretamente no sistema operacional / processador. ; mais rapido q interpretado
+
+- compilador: tradutor de linguagem de programação pra linguagem de máquina.
+
+- alto nível: linguagem mais humanizada
+- baixo nível: mais proxima d eling. de máquina.
+
+- 0 = numeor universal d esucesso, ex. 0 como return pra função main.
+
+>>>> C
+
+- printf("")
+- \ usado rpa mudar o signf. de um carctere = ex. \n para quebra de linha
+
+- indentação n obrigatória (mais proximo de maquina)
+- blocos determinados por chaves
+
+- comentarios: // -> linha unica ; /* cmt. */ uma ou mais linhas
+
+- instruções terminam com ;
+
+-- Variaveis: char, int, double, void
+
+- char: armazena 1 unico caractere 
+- int: numeros inteiros e numeros de 16 e 32 bits
+- float: numeros com casas decimais (32 bits)
+- double: o mesmo (64 bits)
+- void: tipo nulo (usado pra criar procedimentos ou ponteiros genericos)
+
+- sintaxe: tipo nome_val = valor;
+
+ex.
+char letra, chl = a; // só char inicializou
+float real;
+float pi = 3.1415;
+
+- primeiro caractere sempre letra, é case sensitive
+- n pode ter variaveis com acento e blank space
+
+- pode determinar signed (+ ou -), unsigned (sem sinal), short (metade dos bits), long (dobra quantidade precisão e tamanho)
+
+-- Biblioteca stdio.h
+
+- h é de header
+- smeantica: #include <stdio.h>
+
+-- marcações do printf()
+- %d = inteiro
+- %f = double ou float
+- %s = string
+- %c = caractere
+
+-- scanf(), n permite mensagem como o input() em python, logo deve-se usar printf() antes.
+
+ex.: scanf("%f", &preco);
