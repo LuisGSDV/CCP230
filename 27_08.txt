@@ -1,0 +1,40 @@
+-- Operadores Relacionais
+
+
+-- Estrturas Condicionais
+
+
+- Operador ternário
+
+int positivo = (x > 0) ? 1 : 0;
+
+int sinal (x > 0) ? 1 : ( x < 0) ? -1 : 0;
+
+- Switch
+
+switch (val){
+    case valor1:
+        ..;
+        break;
+    case valor2:
+        ..;
+        break;
+    case valor3:
+        ..;
+        break;
+    ...
+    default:
+        printf(".........");
+}
+
+-- Operadores Lógicos
+
+&& -> AND
+|| -> OR
+!  -> NOT
+
+-- Divisão
+
+10 % 2  -> 0    | da o resto
+11 // 2 -> 2    | da o quociente em inteiro
+11 / 2  -> 2,5  | da o quociente em decimal

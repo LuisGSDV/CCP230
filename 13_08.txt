@@ -53,4 +53,4 @@ float pi = 3.1415;
 
 -- scanf(), n permite mensagem como o input() em python, logo deve-se usar printf() antes.
 
-ex.: scanf("%f", &preco);
+ex.: scanf("%f", &preco); // printf n tem "&" - ex.: printf("Valor R$ %f", preco);
