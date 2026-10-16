@@ -1,0 +1,27 @@
+operador de endereço: &
+
+marcador: %p -> mostra o endereço da variável
+-> printf("%p\n", &idade);
+--> exibido em hexadecimal
+
+ponteiro: variável que armazena endereço de outra variável;
+-> ex.: 0x1220 (*ptr) guarda 0x1230; variável num (de endereço 0x1230) guarda o valor 10;
+-> int num = 10; int *ptr = &num;
+-> <tipo> *nome_val; ex.: int *val;
+-> printf com *ptr e marcador %d daria 10, com marcador %p e &ptr daria o endereço do próprio ponteiro, e com %d e ptr o endereço de num.
+-> normalmente inicializa com NULL
+--> val = &num; e não *val = &num
+
+ponteiro de ponteiro
+-> quanto mais modularizado o código estiver, mais importante
+-> int **ptrxptr; ptrxptr= &ptr;
+--> se printf com %p e só um asterisco em ptrxptr (*ptrxptr) terá como saída endereço de ptr, se com dois asteriscos (**ptrxptr) terá o valor d eum
+
+scanf usa & pois joga entrada no endereço da variável indicada
+
+ponteiro em vetor
+-> vetor sem índice é endereço do primeiro índice do vetor;
+
+
+
+
