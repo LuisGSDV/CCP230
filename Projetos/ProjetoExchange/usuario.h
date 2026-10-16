@@ -1,0 +1,1 @@
+void logar(char, char);
