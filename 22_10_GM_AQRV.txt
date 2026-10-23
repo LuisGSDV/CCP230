@@ -1,0 +1,44 @@
+!!! Gerenciamento de Memória
+
+//lixo de meória -> apagar referencia de variavel, mas dado permance lá
+
+após encerrar programa, variaveis são liberadas da stack
+
+stack é autogerenciada 
+
+pra usar heap, trabalhar com ponteiros; heap aloca em qualquer posição
+
+o ptr alocado em stack vai guardar no ultimo bi ta primeri apopsição dela na heap
+heap: 0 0 0 18
+stack: 0 0 0 F1
+
+malloc()  ->alocação de memoria;
+free() -> desalocação de memoria;
+
+- malloc()
+--> especificar numero de bytes, após isso ponteiro é enviado ao 
+    primeiro espaço desse intervalo na memoria ram
+--> esse espaço de memoria agr estar alcoado na heap (dinamica)
+--> se vc decidir usar esse espaço com a stack, devera tratar esse
+    espaço de alocação na heap, senão haverá vazamento de memoria
+    (ocupação de memória sem uso) 
+--> incializa com lixo de memória
+
+- sizeof()
+--> passar como parametro o numero de bytes que deverá ser guardado
+    na memória para o argumento.
+--> malloc( sizeof(int))
+
+- free()
+--> desaloca posições de memória em posição dinâmica
+
+- calloc()
+--> é malloc que incializa com 0
+
+- realloc()
+--> desaloca e realoca
+
+!!! Arquivos
+
+/ fita magnetica é suoer barato para guardar dados, é usado principalmente
+  em extratos bancarios;
